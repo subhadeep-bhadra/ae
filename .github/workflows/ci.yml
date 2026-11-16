@@ -3,7 +3,9 @@ name: CI
 
 on:
   push: 
-    paths: "*.py"
+    paths: 
+         -"*.py"
+         -"Dockerfile"
 
 jobs:
   code:
