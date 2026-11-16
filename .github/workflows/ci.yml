@@ -3,8 +3,9 @@ name: CI
 
 on:
   push:
-    branches:
-      - master
+    paths:
+      - "*.py"
+    
 
 jobs:
   code:
@@ -25,4 +26,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ vars.DOCKER_USERNAME }}/testapp:latest
+          tags: ${{ vars.DOCKER_USERNAME }}/devboard:latest
