@@ -2,7 +2,6 @@ name: build-and-push
 
 on:
  push:
-    paths:
       branches: [main]
     
 
@@ -23,6 +22,6 @@ jobs:
       - name: Docker Build and Push
         uses: docker/build-push-action@v7
         with:
-        .
+        
           push: true
           tags: ${{ vars.DOCKER_USERNAME }}/devboard-ih-main:latest
