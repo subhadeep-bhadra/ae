@@ -2,7 +2,7 @@ name: build-and-push
 
 on:
  push:
-      branches: [main]
+    #  branches: [main]
     
 
 jobs:
@@ -24,4 +24,4 @@ jobs:
         with:
         
           push: true
-          tags: ${{ vars.DOCKER_USERNAME }}/devboard-ih-master:latest
+          tags: ${{ vars.DOCKER_USERNAME }}/devboard-ih-main:latest
